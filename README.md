@@ -1,4 +1,4 @@
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
@@ -103,6 +103,10 @@
             width: 100%;
         }
         
+        .btn-warning {
+            background-color: #f39c12;
+        }
+        
         /* أنماط لوحة التحكم */
         .dashboard {
             display: none;
@@ -157,11 +161,11 @@
             margin-right: 5px;
         }
         
-        .lab-1 { background-color: var(--lab1-color); color: white; }
         .
 
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-lab-2 { background-color: var(--lab2-color); color: white; }
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+lab-1 { background-color: var(--lab1-color); color: white; }
+        .lab-2 { background-color: var(--lab2-color); color: white; }
         .lab-3 { background-color: var(--lab3-color); color: white; }
         
         .logout-btn {
@@ -322,13 +326,13 @@ lab-2 { background-color: var(--lab2-color); color: white; }
             background-color: white;
             border-color: #ddd;
             border-bottom-color: white;
-            margin-bottom: -1px;
+
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+margin-bottom: -1px;
         }
         
         .tab-content {
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-display: none;
+            display: none;
         }
         
         .tab-content.active {
@@ -402,14 +406,6 @@ display: none;
                 margin-bottom: 5px;
             }
         }
-
-        .test-credentials {
-            margin-top: 20px; 
-            padding: 15px; 
-            background: #f8f9fa; 
-            border-radius: 5px;
-            display: none; /* إخفاء بيانات الدخول */
-        }
         
         .status-pending { background-color: #fff3cd; color: #856404; }
         .status-accepted { background-color: #d1ecf1; color: #0c5460; }
@@ -432,14 +428,6 @@ display: none;
                 </div>
                 <button type="submit" class="btn btn-block">دخول</button>
             </form>
-            <!-- مربع بيانات الدخول مخفي -->
-            <div class="test-credentials">
-                <h4 style="margin-bottom: 10px;">بيانات الدخول للتجربة:</h4>
-                <p><strong>مدير النظام:</strong> admin / admin123</p>
-                <p><strong>دكتور 1:</strong> doctor1 / doctor123</p>
-                <p><strong>دكتور 2:</strong> doctor2 / doctor123</p>
-                <p><strong>ذاتية:</strong> self / self123</p>
-            </div>
         </div>
     </div>
 
@@ -456,18 +444,17 @@ display: none;
                     <span id="userNameDisplay"></span>
                 </div>
             </div>
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-</header>
+        </header>
 
         <!-- الشريط الجانبي -->
         <div class="sidebar">
             <ul class="sidebar-menu">
                 <li><a href="#" class="nav-link active" data-page="dashboardPage">لوحة التحكم</a></li>
                 <li id="usersManagementLink" style="display: none;"><a href="#" class="nav-link" data-page="usersPage">إدارة المستخدمين</a></li>
-                <li id="materialsManagementLink" style="display: none;"><a href="#" class="nav-link" data-page="materialsPage">إدارة المواد</a></li>
                 <li id="reportsLink" style="display: none;"><a href="#" class="nav-link" data-page="reportsPage">التقارير والتحليلات</a></li>
-                <li id="chemistrySectionLink" style="display: none;"><a href="#" class="nav-link" data-page="chemistryPage">قسم الكيمياء</a></li>
+
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+<li id="chemistrySectionLink" style="display: none;"><a href="#" class="nav-link" data-page="chemistryPage">قسم الكيمياء</a></li>
                 <li id="warehouseSectionLink" style="display: none;"><a href="#" class="nav-link" data-page="warehousePage">المخزن</a></li>
             </ul>
         </div>
@@ -535,9 +522,7 @@ display: none;
                         <thead>
                             <tr>
                                 <th>النشاط</th>
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-<th>المستخدم</th>
+                                <th>المستخدم</th>
                                 <th>التاريخ</th>
                             </tr>
                         </thead>
@@ -554,7 +539,9 @@ display: none;
                     <h2>إدارة المستخدمين</h2>
                 </div>
                 <div class="action-buttons">
-                    <button class="btn btn-primary" id="addUserBtn">إضافة مستخدم</button>
+
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+<button class="btn btn-primary" id="addUserBtn">إضافة مستخدم</button>
                 </div>
                 <table>
                     <thead>
@@ -614,75 +601,6 @@ display: none;
                 </div>
             </div>
 
-            <!-- صفحة إدارة المواد (للمدير فقط) -->
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-<div class="page" id="materialsPage">
-                <div class="page-header">
-                    <h2>إدارة المواد</h2>
-                </div>
-                <div class="action-buttons">
-                    <button class="btn btn-primary" id="addMaterialBtn">إضافة مادة</button>
-                </div>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>اسم المادة</th>
-                            <th>النوع</th>
-                            <th>المختبر</th>
-                            <th>رقم الوارد</th>
-                            <th>الكمية</th>
-                            <th>تاريخ الانتهاء</th>
-                            <th>الحالة</th>
-                            <th>الإجراءات</th>
-                        </tr>
-                    </thead>
-                    <tbody id="materialsTable">
-                        <!-- سيتم ملؤها بالبيانات -->
-                    </tbody>
-                </table>
-                
-                <!-- نموذج إضافة مادة -->
-                <div id="materialFormModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index: 1000;">
-                    <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: white; padding: 30px; border-radius: 10px; width: 90%; max-width: 500px;">
-                        <h3>إضافة مادة جديدة</h3>
-                        <form id="addMaterialForm">
-                            <div class="form-group">
-                                <label for="newMaterialName">اسم المادة</label>
-                                <input type="text" id="newMaterialName" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="newMaterialType">نوع المادة</label>
-                                <select id="newMaterialType" required>
-                                    <option value="standard">مادة قياسية</option>
-                                    <option value="chemical">مادة كيميائية</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="newMaterialLab">المختبر</label>
-                                <select id="newMaterialLab" required>
-                                    <option value="1">المختبر الأول</option>
-                                    <option value="2">المختبر الثاني</option>
-                                    <option value="3">المختبر الثالث</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="newMaterialQuantity">الكمية</label>
-                                <input type="number" id="newMaterialQuantity" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="newMaterialExpiry">تاريخ الانتهاء</label>
-                                <input type="date" id="newMaterialExpiry" required>
-                            </div>
-                            <div class="action-buttons">
-                                <button type="submit" class="btn btn-success">إضافة</button>
-                                <button type="button" class="btn btn-danger" onclick="closeMaterialForm()">إلغاء</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-
             <!-- صفحة التقارير والتحليلات (للمدير فقط) -->
             <div class="page" id="reportsPage">
                 <div class="page-header">
@@ -692,12 +610,12 @@ display: none;
                     <div class="form-group">
                         <label for="reportType">نوع التقرير</label>
                         <select id="reportType">
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-<option value="materials">تقرير المواد</option>
+                            <option value="materials">تقرير المواد</option>
                             <option value="expiry">تقرير المواد المنتهية الصلاحية</option>
                             <option value="usage">تقرير استخدام المواد</option>
-                            <option value="labs">تقرير المختبرات</option>
+
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+<option value="labs">تقرير المختبرات</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -771,16 +689,16 @@ display: none;
                                 <th>الحالة</th>
                                 <th>تاريخ الإضافة</th>
                                 <th>تمت الإضافة بواسطة</th>
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-</tr>
+                            </tr>
                         </thead>
                         <tbody id="labMaterialsTable">
                             <!-- سيتم ملؤها بالبيانات -->
                         </tbody>
                     </table>
                 </div>
-            </div>
+
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+</div>
 
             <!-- صفحة المخزن (للذاتية فقط) -->
             <div class="page" id="warehousePage">
@@ -849,14 +767,14 @@ display: none;
                 </div>
                 
                 <!-- محتوى تبويب عرض المواد المضافة -->
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-<div class="tab-content" id="viewMaterialsTab">
+                <div class="tab-content" id="viewMaterialsTab">
                     <div class="action-buttons">
                         <button class="btn btn-primary" id="refreshMaterialsBtn">تحديث القائمة</button>
                     </div>
                     <div class="materials-summary">
-                        <h3>المواد المضافة بواسطة: <span id="currentUserName"></span></h3>
+
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+<h3>المواد المضافة بواسطة: <span id="currentUserName"></span></h3>
                         <p>إجمالي المواد: <span id="userMaterialsCount">0</span> مادة</p>
                     </div>
                     <table>
@@ -884,10 +802,8 @@ display: none;
     </div>
 
     <script>
-        // بيانات التطبيق
-        let currentUser = null;
-        let materials = JSON.parse(localStorage.getItem('materials')) || [];
-        let users = JSON.parse(localStorage.getItem('users')) || [
+        // بيانات التطبيق الافتراضية
+        const defaultUsers = [
             { 
                 username: 'admin', 
                 password: 'admin123', 
@@ -917,7 +833,14 @@ display: none;
                 lab: null
             }
         ];
-        let activities = JSON.parse(localStorage.getItem('activities')) || [];
+
+        const defaultActivities = [];
+
+        // بيانات التطبيق
+        let currentUser = null;
+        let materials = JSON.parse(localStorage.getItem('materials')) || [];
+        let users = JSON.parse(localStorage.getItem('users')) || defaultUsers;
+        let activities = JSON.parse(localStorage.getItem('activities')) || defaultActivities;
 
         // عناصر DOM
         const loginPage = document.getElementById('loginPage');
@@ -932,7 +855,6 @@ display: none;
         
         // عناصر الصلاحيات
         const usersManagementLink = document.getElementById('usersManagementLink');
-        const materialsManagementLink = document.getElementById('materialsManagementLink');
         const reportsLink = document.getElementById('reportsLink');
         const chemistrySectionLink = document.getElementById('chemistrySectionLink');
         const warehouseSectionLink = document.getElementById('warehouseSectionLink');
@@ -943,15 +865,15 @@ display: none;
         const warehouseMaterialsTable = document.getElementById('warehouseMaterialsTable');
         const userMaterialsCount = document.getElementById('userMaterialsCount');
         const currentUserNameDisplay = document.getElementById('currentUserName');
-        const refreshMaterialsBtn = document.
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-getElementById('refreshMaterialsBtn');
+        const refreshMaterialsBtn = document.getElementById('refreshMaterialsBtn');
         const tabs = document.querySelectorAll('.tab');
         const tabContents = document.querySelectorAll('.tab-content');
 
         // عناصر قسم الكيمياء
-        const selectedMaterial = document.getElementById('selectedMaterial');
+        const selectedMaterial = document.
+
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+getElementById('selectedMaterial');
         const selectedMaterialInfo = document.getElementById('selectedMaterialInfo');
         const infoMaterialName = document.getElementById('infoMaterialName');
         const infoSupplierNumber = document.getElementById('infoSupplierNumber');
@@ -965,6 +887,7 @@ getElementById('refreshMaterialsBtn');
             const password = document.getElementById('password').value;
             
             console.log('محاولة دخول:', username, password);
+            console.log('المستخدمون المتاحون:', users);
             
             // التحقق من بيانات المستخدم
             const user = users.find(u => u.username === username && u.password === password);
@@ -1052,13 +975,13 @@ getElementById('refreshMaterialsBtn');
             }
         }
 
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-// تحديث الصلاحيات بناءً على نوع المستخدم
+        // تحديث الصلاحيات بناءً على نوع المستخدم
         function updatePermissions() {
             // إخفاء جميع الروابط أولاً
             usersManagementLink.style.display = 'none';
-            materialsManagementLink.style.display = 'none';
-            reportsLink.style.display = 'none';
+
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+reportsLink.style.display = 'none';
             chemistrySectionLink.style.display = 'none';
             warehouseSectionLink.style.display = 'none';
             labsStats.style.display = 'none';
@@ -1066,11 +989,9 @@ getElementById('refreshMaterialsBtn');
             // إظهار الروابط بناءً على الصلاحيات
             if (currentUser.type === 'admin') {
                 usersManagementLink.style.display = 'block';
-                materialsManagementLink.style.display = 'block';
                 reportsLink.style.display = 'block';
                 labsStats.style.display = 'block';
                 loadUsersTable();
-                loadMaterialsTable();
                 loadLabsStats();
             } else if (currentUser.type === 'doctor') {
                 chemistrySectionLink.style.display = 'block';
@@ -1136,10 +1057,7 @@ getElementById('refreshMaterialsBtn');
             
             // تحديث جدول الأنشطة
             const activitiesTable = document.getElementById('activitiesTable');
-            activitiesTable.
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-innerHTML = '';
+            activitiesTable.innerHTML = '';
             
             const recentActivities = activities.slice(-5).reverse();
             recentActivities.forEach(activity => {
@@ -1147,7 +1065,9 @@ innerHTML = '';
                 row.innerHTML = `
                     <td>${activity.action}</td>
                     <td>${activity.user}</td>
-                    <td>${activity.date}</td>
+
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+<td>${activity.date}</td>
                 `;
                 activitiesTable.appendChild(row);
             });
@@ -1171,33 +1091,6 @@ innerHTML = '';
                     </td>
                 `;
                 usersTable.appendChild(row);
-            });
-        }
-
-        // تحميل جدول المواد (للمدير)
-        function loadMaterialsTable() {
-            const materialsTable = document.getElementById('materialsTable');
-            materialsTable.innerHTML = '';
-            
-            materials.forEach(material => {
-                const row = document.createElement('tr');
-                const statusClass = getMaterialStatusClass(material.expiryDate);
-                const statusText = getStatusName(material.status);
-                const statusStyle = getStatusClass(material.status);
-                
-                row.innerHTML = `
-                    <td>${material.name}</td>
-                    <td>${material.type === 'standard' ? 'قياسية' : 'كيميائية'}</td>
-                    <td>${getLabName(material.lab)}</td>
-                    <td>${material.supplierNumber || '-'}</td>
-                    <td>${material.quantity}</td>
-                    <td class="${statusClass}">${material.expiryDate}</td>
-                    <td class="${statusStyle}">${statusText}</td>
-                    <td>
-                        <button class="btn btn-danger btn-sm" onclick="deleteMaterial('${material.id}')">حذف</button>
-                    </td>
-                `;
-                materialsTable.appendChild(row);
             });
         }
 
@@ -1229,9 +1122,7 @@ innerHTML = '';
                     <td>${material.category}</td>
                     <td>${material.quantity}</td>
                     <td>${material.receiveDate}</td>
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-<td class="${statusClass}">${material.expiryDate}</td>
+                    <td class="${statusClass}">${material.expiryDate}</td>
                     <td>${material.supplierNumber || '-'}</td>
                     <td class="${statusStyle}">${statusText}</td>
                     <td>
@@ -1265,7 +1156,9 @@ innerHTML = '';
                     <td>${material.supplierNumber || '-'}</td>
                     <td>${material.analysisMethod || 'لم يتم الفحص'}</td>
                     <td class="${statusStyle}">${statusText}</td>
-                    <td>${material.addedDate}</td>
+
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+<td>${material.addedDate}</td>
                     <td>${material.addedBy || 'غير معروف'}</td>
                 `;
                 labMaterialsTable.appendChild(row);
@@ -1327,9 +1220,7 @@ innerHTML = '';
                 quantity: document.getElementById('quantity').value,
                 receiveDate: document.getElementById('receiveDate').value,
                 expiryDate: document.getElementById('expiryDate').value,
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-supplierNumber: document.getElementById('supplierNumber').value,
+                supplierNumber: document.getElementById('supplierNumber').value,
                 notes: document.getElementById('notes').value,
                 addedBy: currentUser.username,
                 addedDate: new Date().toISOString().split('T')[0],
@@ -1353,40 +1244,6 @@ supplierNumber: document.getElementById('supplierNumber').value,
             loadDashboardData();
         });
 
-        // إضافة مادة من قبل المدير
-        document.getElementById('addMaterialForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const material = {
-                id: generateId(),
-                name: document.getElementById('newMaterialName').value,
-                type: document.getElementById('newMaterialType').value,
-                lab: document.getElementById('newMaterialLab').value,
-                quantity: document.getElementById('newMaterialQuantity').value,
-                expiryDate: document.getElementById('newMaterialExpiry').value,
-                addedBy: currentUser.username,
-                addedDate: new Date().toISOString().split('T')[0],
-                status: 'pending'
-            };
-            
-            materials.push(material);
-            localStorage.setItem('materials', JSON.stringify(materials));
-            
-            // تسجيل النشاط
-            activities.push({
-                action: إضافة مادة جديدة: ${material.name},
-                user: currentUser.name,
-                date: new Date().toLocaleDateString('ar-EG')
-            });
-            localStorage.setItem('activities', JSON.stringify(activities));
-            
-            alert('تم إضافة المادة بنجاح!');
-            closeMaterialForm();
-            loadMaterialsTable();
-            loadDashboardData();
-            loadLabsStats();
-        });
-
         // إضافة مستخدم من قبل المدير
         document.getElementById('addUserForm').addEventListener('submit', function(e) {
             e.preventDefault();
@@ -1400,7 +1257,10 @@ supplierNumber: document.getElementById('supplierNumber').value,
             };
             
             users.push(user);
-            localStorage.setItem('users', JSON.stringify(users));
+            localStorage.
+
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+setItem('users', JSON.stringify(users));
             
             // تسجيل النشاط
             activities.push({
@@ -1427,10 +1287,7 @@ supplierNumber: document.getElementById('supplierNumber').value,
                 return;
             }
             
-            const materialIndex = materials.
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-findIndex(m => m.id === materialId);
+            const materialIndex = materials.findIndex(m => m.id === materialId);
             if (materialIndex === -1) {
                 alert('المادة المختارة غير موجودة');
                 return;
@@ -1475,7 +1332,6 @@ findIndex(m => m.id === materialId);
                 localStorage.setItem('activities', JSON.stringify(activities));
                 
                 if (currentUser.type === 'admin') {
-                    loadMaterialsTable();
                     loadLabsStats();
                 } else if (currentUser.type === 'self') {
                     loadUserMaterials();
@@ -1504,7 +1360,9 @@ findIndex(m => m.id === materialId);
                     action: حذف مستخدم,
                     user: currentUser.name,
                     date: new Date().toLocaleDateString('ar-EG')
-                });
+
+عِراق مُحَمد عيسى, [11/3/2025 11:13 PM]
+});
                 localStorage.setItem('activities', JSON.stringify(activities));
                 
                 loadUsersTable();
@@ -1524,16 +1382,8 @@ findIndex(m => m.id === materialId);
             document.getElementById('userFormModal').style.display = 'block';
         });
 
-        // إظهار نموذج إضافة مادة (للمدير)
-        document.getElementById('addMaterialBtn').addEventListener('click', function() {
-            document.getElementById('materialFormModal').style.display = 'block';
-        });
-
         // إظهار/إخفاء اختيار المختبر عند تغيير نوع المستخدم
-        document.
-
-عِراق مُحَمد عيسى, [11/3/2025 10:20 PM]
-getElementById('newUserType').addEventListener('change', function() {
+        document.getElementById('newUserType').addEventListener('change', function() {
             const labSelection = document.getElementById('labSelection');
             if (this.value === 'doctor') {
                 labSelection.style.display = 'block';
@@ -1546,12 +1396,6 @@ getElementById('newUserType').addEventListener('change', function() {
         function closeUserForm() {
             document.getElementById('userFormModal').style.display = 'none';
             document.getElementById('addUserForm').reset();
-        }
-
-        // إغلاق نموذج إضافة مادة
-        function closeMaterialForm() {
-            document.getElementById('materialFormModal').style.display = 'none';
-            document.getElementById('addMaterialForm').reset();
         }
 
         // التنقل بين الصفحات
@@ -1580,8 +1424,6 @@ getElementById('newUserType').addEventListener('change', function() {
                     loadUnprocessedMaterials();
                 } else if (pageId === 'usersPage' && currentUser.type === 'admin') {
                     loadUsersTable();
-                } else if (pageId === 'materialsPage' && currentUser.type === 'admin') {
-                    loadMaterialsTable();
                 }
             });
         });
@@ -1618,14 +1460,12 @@ getElementById('newUserType').addEventListener('change', function() {
         function initApp() {
             // حفظ البيانات الأولية إذا لم تكن موجودة
             if (!localStorage.getItem('users')) {
-                localStorage.setItem('users', JSON.stringify(users));
+                localStorage.setItem('users', JSON.stringify(defaultUsers));
             }
             
             if (!localStorage.getItem('activities')) {
-                localStorage.setItem('activities', JSON.stringify(activities));
+                localStorage.setItem('activities', JSON.stringify(defaultActivities));
             }
-            
-            // تم إزالة autoLogin() هنا
         }
 
         // تشغيل التطبيق
